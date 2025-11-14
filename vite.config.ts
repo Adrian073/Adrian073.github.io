@@ -4,6 +4,7 @@ import path from "path";
 
 // CLEAN CONFIG — no lovable tagger
 export default defineConfig({
+  base: "/",
   server: {
     host: "::",
     port: 8080,
