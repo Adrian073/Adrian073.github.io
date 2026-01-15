@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <title>Redirecting…</title>
     <script>
-      // Redirect all 404s to index.html so React Router can handle them
-      window.location.replace("/");
+      // Preserve the full path and redirect to /?p=...
+      var path = location.pathname + location.search + location.hash;
+      location.replace("/?p=" + encodeURIComponent(path));
     </script>
   </head>
   <body></body>
