@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>Redirecting…</title>
     <script>
-      // Preserve the full path and redirect to /?p=...
       var path = location.pathname + location.search + location.hash;
       location.replace("/?p=" + encodeURIComponent(path));
     </script>
